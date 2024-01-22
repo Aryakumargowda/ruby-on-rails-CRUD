@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag('nav')%>
+
+<nav>
+    <div class="main_nav">
+        <div class="headding">
+            <h1 class="">Product Management </h1>
+        </div>
+        <ul class="list">
+            <li>
+                <%= link_to "Home", root_path,class:"list_ele"%>
+            </li>
+            <li>
+                <%= link_to "Product",products_path,class:"list_ele"%>
+            </li>
+            <li>
+                <%= link_to "Customers", customers_path,class:"list_ele"%>
+            </li>
+            <li>
+                <%= link_to "Orders", orders_path,class:"list_ele"%>
+            </li>
+            <li>
+                <%= link_to "Line Items", line_items_path,class:"list_ele"%>
+            </li>
+        </ul>
+    </div>
+
+</nav>

@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag('product')%>
+
+      <tr>
+        <td><%= customer.id %></td>
+        <td><%= customer.first_name %></td>
+        <td><%= customer.last_name %></td>
+        <td><%= customer.email %></td>
+        
+          <td><%= link_to "Edit", edit_customer_path(customer), class: "edit" %></td>
+          <td><%= button_to "Destroy ", customer_path(customer), method: :delete, class: "del" %></td>
+          
+      </tr>

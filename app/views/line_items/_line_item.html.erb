@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag('product')%>
+
+  <tr>
+    <td><%= line_item.id %></td>
+    <td><%= line_item.order_id %></td>
+    <td><%= line_item.product_id %></td>
+    <td><%= line_item.quantity %></td>
+    <td><%= line_item.unit_price%></td>
+    
+      <td><%= link_to "Edit", edit_line_item_path(line_item), class: "edit" %></td>
+      <td><%= button_to "Destroy ", line_item_path(line_item), method: :delete, class: "del" %></td>
+      
+  </tr>

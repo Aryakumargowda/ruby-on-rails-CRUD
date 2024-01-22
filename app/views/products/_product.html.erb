@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag('product')%>
+
+      <tr>
+        <td><%= product.id %></td>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= product.price %></td>
+        
+          <td><%= link_to "Edit", edit_product_path(product), class: "edit" %></td>
+          <td><%= button_to "Destroy ", product_path(product), method: :delete, class: "del" %></td>
+          
+      </tr>
+    
+

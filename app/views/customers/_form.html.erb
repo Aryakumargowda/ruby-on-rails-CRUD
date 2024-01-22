@@ -1,0 +1,35 @@
+<%=stylesheet_link_tag('input')%>
+
+<%= form_with(model: customer, class: "contents") do |form| %>
+  <% if customer.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(customer.errors.count, "error") %> prohibited this customer from being saved:</h2>
+
+      <ul>
+        <% customer.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="inp_fields">
+    <div class="my-5">
+      <%= form.label :first_name, class:"lab" %>
+      <%= form.text_field :first_name, class: "inp" %>
+    </div>
+
+    <div class="my-5">
+      <%= form.label :last_name, class:"lab"%>
+      <%= form.text_field :last_name, class: "inp" %>
+    </div>
+
+    <div class="my-5">
+      <%= form.label :email, class:"lab"%>
+      <%= form.text_field :email, class: "inp" %>
+    </div>
+
+    <div class="inline">
+      <%= form.submit class: "submit" %>
+    </div>
+  </div>
+<% end %>

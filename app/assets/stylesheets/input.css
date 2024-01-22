@@ -1,0 +1,36 @@
+.inp_fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .inp */
+.inp{
+    background: rgb(208, 204, 204);
+    border: none;
+}
+
+
+.my-5,.inline{
+    margin-left: 1em;
+    padding: .7em;
+    margin: .5em;
+    /* align-items: center; */
+}
+
+.submit{
+    border: none;
+    background: rgb(33, 124, 51);
+    color:aliceblue;
+    padding:.4em;
+    border-radius: .5em;
+}
+
+.back{
+    padding:.4em;
+    color:aliceblue;
+    text-decoration: none;
+    margin: 0 0 0 1em;
+    background: rgb(121, 124, 33);
+    border-radius: .3em;
+}

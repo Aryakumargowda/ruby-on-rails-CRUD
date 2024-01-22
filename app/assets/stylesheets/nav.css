@@ -1,0 +1,27 @@
+nav{
+    color: rgb(210, 210, 210);
+    margin-top: 1em;
+}
+
+.list{
+    margin-top: 1em;
+    display: flex;
+    list-style: none;
+    width: 45em;
+    border-radius: .5em;
+    background: rgb(32, 52, 68);
+    height: 1.8em;
+    align-items: center;
+
+}
+
+
+li{
+    margin:0 1em 0 1em;
+}
+
+.list_ele{
+    background: rgb(32, 52, 68);
+    color: aliceblue;
+    text-decoration: none;
+}

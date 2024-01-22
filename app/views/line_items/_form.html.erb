@@ -1,0 +1,35 @@
+<%=stylesheet_link_tag('input')%>
+
+<%= form_with(model: line_item, class: "contents") do |form| %>
+  <% if line_item.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(line_item.errors.count, "error") %> prohibited this line_item from being saved:</h2>
+
+      <ul>
+        <% line_item.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="inp_fields">
+
+  <div class="my-5">
+    <%= form.label :order_id, calss:"lab"%>
+    <%= form.collection_select :order_id,Order.order(:order_date),:id,:order_date,class: "inp" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :product_id, class:"lab"%>
+    <%= form.collection_select :product_id,Product.order(:name), :id, :name, class: "inp" %>
+  </div>
+
+
+
+
+  <div class="inline">
+    <%= form.submit class: "submit" %>
+  </div>
+</div>
+<% end %>

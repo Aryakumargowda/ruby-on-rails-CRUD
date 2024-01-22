@@ -1,0 +1,21 @@
+div{
+    color:aliceblue;
+    font-family:sans-serif;
+}
+
+.dashBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:.5em 0 0 1em;
+}
+
+table{
+    margin: 1em;
+    border: 1px solid black;
+}
+
+th,td{
+    border: 1px solid black;
+    padding:.5em 1em .5em 1em;
+}

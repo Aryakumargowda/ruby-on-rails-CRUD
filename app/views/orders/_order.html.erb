@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag('product')%>
+
+      <tr>
+        <td><%= order.id %></td>
+        <td><%= order.customer_id %></td>
+        <td><%= order.order_date %></td>
+        <td><%= order.status %></td>
+        
+          <td><%= link_to "Edit", edit_order_path(order), class: "edit" %></td>
+          <td><%= button_to "Destroy ", order_path(order), method: :delete, class: "del" %></td>
+          
+      </tr>
+    

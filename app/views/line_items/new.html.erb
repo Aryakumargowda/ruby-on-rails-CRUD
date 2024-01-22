@@ -1,0 +1,11 @@
+<%=stylesheet_link_tag('input')%>
+
+<div class="mx-auto md:w-2/3 w-full">
+
+  <h1 class="font-bold text-4xl">New line item</h1>
+
+ 
+  <%= render "form", line_item: @line_item %>
+
+  <%= link_to "Back", line_items_path, class: "back" %>
+</div>
