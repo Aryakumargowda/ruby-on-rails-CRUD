@@ -17,7 +17,7 @@
 
   <div class="my-5">
     <%= form.label :order_id, calss:"lab"%>
-    <%= form.collection_select :order_id,Order.order(:order_date),:id,:order_date,class: "inp" %>
+    <%= form.collection_select :order_id,Order.order(:order_date),:id,:id,class: "inp" %>
   </div>
 
   <div class="my-5">
